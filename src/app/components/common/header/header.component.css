@@ -1,28 +1,4 @@
-/* ul {
-    display:block;
-    background:#45619D;
-    list-style:none;
-    margin:0;
-    padding:12px 10px;
-    height:21px;
-}
-ul li {
-    float:left;
-    font:13px helvetica;
-    font-weight:bold;
-    margin:3px 0;
-}
-ul li a {
-    color:#FFF;
-    text-decoration:none;
-    padding:6px 15px;
-    cursor:pointer;
-}
-ul li a:hover {
-    background:#425B90;
-    text-decoration:none;
-    cursor:pointer;
-} */
+
     
 #noti_Container {
     position:relative;
@@ -232,23 +208,6 @@ ul li a:hover {
 .dropdown-menu .dropdown-body .notification .notification-text .highlight {
     font-weight: bold;
   }
-/* 
-.count {
-    position: absolute;
-    top: -6px;
-    right: -1px;
-    height: 15px;
-    width: 15px;
-    overflow: hidden;
-    background: #21b7b7;
-    color: #fff;
-    text-align: center;
-    border-radius: 100%;
-    font-size: 9px;
-    font-weight: bold;
-    line-height: 15px;
-  } */
-
   .notifications {
     margin-right: 10px;
   }
@@ -262,7 +221,7 @@ ul li a:hover {
     right: 0;
     top: -1px;
   }
-.user-options-wrapper .user-image {
+  .user-options-wrapper .user-image {
     background: url("http://www.apnatimepass.com/tom-cruise-ms.jpg");
     background-size: cover;
     background-position: center;
@@ -273,7 +232,7 @@ ul li a:hover {
     border-radius: 100%;
     margin-right: 10px;
   }
-.user-options-wrapper .user-options {
+  .user-options-wrapper .user-options {
     vertical-align: bottom;
     border: 2px solid #fff;
     border-radius: 100%;
@@ -283,7 +242,7 @@ ul li a:hover {
     text-align: center;
     position: relative;
   }
-.user-options-wrapper .user-options .fa {
+  .user-options-wrapper .user-options .fa {
     position: absolute;
     top: 9px;
     left: 0;
@@ -293,7 +252,6 @@ ul li a:hover {
     color: #fff;
     font-size: 12px;
   }
-
   ::-webkit-scrollbar {
     width: 3px;
   }
@@ -521,11 +479,16 @@ ul li a:hover {
   margin-top: 45px;
   margin-bottom: 28px;
 } 
+.sdmcicon , .modifypasswordicon , .logouticon{
+  padding-right:4px
+}
 
+.navbar-nav > li > .navbarlink{
+  border-right: 1px solid #fff;
+}
 
-
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-  color: rgba(119, 119, 119, 1);
+#custom-bootstrap-menu.navbar-default .navbar-header {
+  color:#fff;
 }
 
 #custom-bootstrap-menu.navbar-default {
@@ -572,29 +535,29 @@ ul li a:hover {
 
 .navbar-default {
   box-shadow:none !important;
-  border-color: #166ea9;
+  border-color: #000;
 }
 
 
 #custom-bootstrap-menu.navbar-default {
   /* background-color: #ffffff !important; */
   /* IE10+ */ 
-background-image: -ms-linear-gradient(top, #1E8BC3 0%, #166EA9 90%);
+background-image: -ms-linear-gradient(top, #000 0%, #000 90%);
 
 /* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(top, #1E8BC3 0%, #166EA9 90%);
+background-image: -moz-linear-gradient(top, #000 0%, #000 90%);
 
 /* Opera */ 
-background-image: -o-linear-gradient(top, #1E8BC3 0%, #166EA9 90%);
+background-image: -o-linear-gradient(top, #000 0%, #000 90%);
 
 /* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1E8BC3), color-stop(90, #166EA9));
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(90, #000));
 
 /* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(top, #1E8BC3 0%, #166EA9 90%);
+background-image: -webkit-linear-gradient(top, #000 0%, #000 90%);
 
 /* W3C Markup */ 
-background-image: linear-gradient(to bottom, #1E8BC3 0%, #166EA9 90%);
+background-image: linear-gradient(to bottom, #000 0%, #000 90%);
 }
 
 .navbar-default {
@@ -614,7 +577,7 @@ background-image: linear-gradient(to bottom, #1E8BC3 0%, #166EA9 90%);
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-  color: #ea9215;
+  color: #fff;
   background-color: transparent !important;
 }
 
@@ -638,7 +601,7 @@ background-image: linear-gradient(to bottom, #1E8BC3 0%, #166EA9 90%);
   }
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover, #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-  color: #ea9215 !important;
+  color: #fff !important;
 }
 
 .navbar-fixed-bottom,
@@ -657,7 +620,7 @@ background-image: linear-gradient(to bottom, #1E8BC3 0%, #166EA9 90%);
   margin: auto;
   border: 8px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 8px solid #3498db;
+  border-top: 8px solid #000;
   width: 50px;
   height: 50px;
   -webkit-animation: spin 2s linear infinite; /* Safari */

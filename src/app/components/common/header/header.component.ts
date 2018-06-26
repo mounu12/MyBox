@@ -7,39 +7,31 @@ import { Router, ActivatedRoute, NavigationEnd  } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  urlValues: any;
-  loginData: any;
-  loginStatus: boolean;
-  constructor() { }
+    urlValues: any;
+    loginData: any;
+    loginStatus: boolean;
+    constructor() { }
 
-  ngOnInit() {
-    this.loadHeaderChanges();
-  }
-  loadHeaderChanges() {
+    ngOnInit() {
+        this.loadHeaderChanges();
+    }
+    loadHeaderChanges() {
         this.urlValues = [
             {
                 'urlLink': '/home',
-                'urlName': 'HOME'
+                'urlName': 'sdmc',
+                'icon' :' <i class="fa fa-edit modifypasswordicon"></i>'
             },
             {
                 'urlLink': '/about',
-                'urlName': 'ABOUT'
+                'urlName': 'Modify Password'
             },
             {
                 'urlLink': '/contact',
-                'urlName': 'CONTACT'
+                'urlName': 'Logout'
             },
-            {
-                'urlLink': '/signin',
-                'urlName': 'LOGIN'
-            },
-            {
-                'urlLink':'/signup',
-                'urlName':'REGISTER'
-            }];
-      } 
-}
-
-  
+        ];
+    } 
+}  
 
 
