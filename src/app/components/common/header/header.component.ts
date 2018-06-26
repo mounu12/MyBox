@@ -18,6 +18,10 @@ export class HeaderComponent implements OnInit {
     loadHeaderChanges() {
         this.urlValues = [
             {
+                'urlLink':'/login',
+                'urlName':'Login'
+            },
+            {
                 'urlLink': '/home',
                 'urlName': 'My Box',
                 'icon' : '<i class="fa fa-user sdmcicon"></i>'
