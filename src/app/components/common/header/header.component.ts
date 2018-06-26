@@ -23,16 +23,18 @@ export class HeaderComponent implements OnInit {
             },
             {
                 'urlLink': '/home',
-                'urlName': 'sdmc',
-                'icon' :' <i class="fa fa-edit modifypasswordicon"></i>'
+                'urlName': 'My Box',
+                'icon' : '<i class="fa fa-user sdmcicon"></i>'
             },
             {
                 'urlLink': '/about',
-                'urlName': 'Modify Password'
+                'urlName': 'Modify Password',
+                'icon' : '<i class="fa fa-edit modifypasswordicon"></i>'
             },
             {
                 'urlLink': '/contact',
-                'urlName': 'Logout'
+                'urlName': 'Logout',
+                'icon' : '<i class="fa fa-power-off logouticon">'
             },
         ];
     } 
