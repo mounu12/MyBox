@@ -18,6 +18,10 @@ export class HeaderComponent implements OnInit {
     loadHeaderChanges() {
         this.urlValues = [
             {
+                'urlLink':'/login',
+                'urlName':'Login'
+            },
+            {
                 'urlLink': '/home',
                 'urlName': 'sdmc',
                 'icon' :' <i class="fa fa-edit modifypasswordicon"></i>'
