@@ -9,7 +9,8 @@ import { FooterComponent } from './components/common/footer/footer.component';
 import { LoginComponent } from './components/common/login/login.component';
 import { AdminComponent } from './modules/admin/admin.component';
 import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
-
+import { SidebarComponent } from './components/common/sidebar/sidebar.component';
+import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
   declarations: [
@@ -19,11 +20,14 @@ import { DashboardComponent } from './components/admin/dashboard/dashboard.compo
     LoginComponent,
     AdminComponent,
     DashboardComponent,
+    SidebarComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    McBreadcrumbsModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

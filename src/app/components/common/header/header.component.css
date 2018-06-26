@@ -485,6 +485,7 @@
 
 .navbar-nav > li > .navbarlink{
   border-right: 1px solid #fff;
+  line-height: 47px;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-header {
@@ -587,7 +588,7 @@ background-image: linear-gradient(to bottom, #000 0%, #000 90%);
 }
 
 .navbar {
-  min-height: 76px !important;
+  min-height: 60px !important;
 }
 
 .navbar>.container .navbar-brand,
