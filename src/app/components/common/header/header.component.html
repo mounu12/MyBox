@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse navbar-menubuilder">
       <ul class="nav navbar-nav navbar-right m-right20" style="margin-top:26px;">
         <li *ngFor="let list of urlValues" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-          <a class="navbarlink" routerLink={{list.urlLink}}><div [innerHTML]={{list.icon}}></div>{{list.urlName}}</a>
+          <a class="navbarlink" routerLink={{list.urlLink}}><b [innerHTML]='list.icon' class="linkicon"></b>{{list.urlName}}</a>
         </li>
         <!-- <li  routerLinkActive="active" routerLinkActiveOptions="{exact:true}">
           <a class="sdmclink" routerLink='#'><i class="fa fa-user sdmcicon"></i>sdmc</a>

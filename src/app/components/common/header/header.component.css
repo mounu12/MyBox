@@ -479,7 +479,7 @@
   margin-top: 45px;
   margin-bottom: 28px;
 } 
-.sdmcicon , .modifypasswordicon , .logouticon{
+.linkicon {
   padding-right:4px
 }
 
@@ -568,7 +568,7 @@ background-image: linear-gradient(to bottom, #000 0%, #000 90%);
   background-image: none;
 }
 
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a  {
   color: #ffffff ;
   font-family: robotom !important;
   font-size: 14px;
