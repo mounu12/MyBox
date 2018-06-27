@@ -15,6 +15,8 @@ import { TerminalmanagementsystemComponent } from './components/admin/terminalma
 import { DevicemanagementComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
 import { DevicegroupComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicegroup/devicegroup.component';
 
+import {DataTableModule} from 'angular2-datatable';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,13 +29,13 @@ import { DevicegroupComponent } from './components/admin/terminalmanagementsyste
     TerminalmanagementsystemComponent,
     DevicemanagementComponent,
     DevicegroupComponent,
-  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    McBreadcrumbsModule
+    McBreadcrumbsModule,
+    DataTableModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

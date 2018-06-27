@@ -23,20 +23,22 @@ const routes: Routes = [
       data: {
         breadcrumbs: 'Terminal Management System'
         },
-        children: [{
+        children: [
+          {
             path: 'devicemanagement' , component: DevicemanagementComponent ,
             data: {
               breadcrumbs: 'Device Management'
             },
-            children: [
-            {
-              path: 'devicegroup' , component: DevicegroupComponent ,
-              data: {
-                breadcrumbs: 'Device Group'
-              }
-
+          },
+          // children: [
+          {
+            path: 'devicegroup' , component: DevicegroupComponent ,
+            data: {
+              breadcrumbs: 'Device Management / Device Group'
             }
-          ]
+
+          // }
+          // ]
          }
         ]
     }

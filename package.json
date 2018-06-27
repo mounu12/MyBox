@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^6.0.2",
     "@angular/router": "^6.0.2",
     "angular2-cookie": "^1.2.6",
+    "angular2-datatable": "^0.6.0",
     "core-js": "^2.5.4",
     "ngx-breadcrumbs": "0.0.3",
     "rxjs": "^6.0.0",
