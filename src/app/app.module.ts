@@ -11,6 +11,8 @@ import { AdminComponent } from './modules/admin/admin.component';
 import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
 import { SidebarComponent } from './components/common/sidebar/sidebar.component';
 import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
+import { TerminalmanagementsystemComponent } from './components/admin/terminalmanagementsystem/terminalmanagementsystem.component';
+import { DevicemanagementComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
     AdminComponent,
     DashboardComponent,
     SidebarComponent,
+    TerminalmanagementsystemComponent,
+    DevicemanagementComponent,
   
   ],
   imports: [

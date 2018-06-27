@@ -7,30 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   urlValues: any;
-  urlSubvalues:any;
+  urlSubvalues: any;
   constructor() { }
 
   ngOnInit() {
     this.loadSidebarChanges();
   }
-  loadSidebarChanges(){
-    this.urlValues=[
+  loadSidebarChanges() {
+    this.urlValues = [
       {
-        'urlLink': '/console',
-        'urlName': 'Console'
+        'urlLink': 'dashboard',
+        'urlName': 'Dashboard'
       }],
-      this.urlSubvalues=[
+      this.urlSubvalues = [
         {
-          'urlName': 'Terminal',
-          'icon' :'<i class="fa fa-chevron-down"></i>',
-          terminalsubvalues:[{
-            'urlName':'Device Management'
+          'urlName': 'Terminal Management System',
+          'icon' : '<i class="fa fa-chevron-down"></i>',
+          terminalsubvalues: [{
+            'urlLink': 'terminalmanagementsystem/devicemanagement',
+            'urlName': 'Device Management'
           },
           {
-            'urlName':'Device Group'
+            'urlName': 'Device Group'
           }
           ]
         }
-      ]
+      ];
   }
 }

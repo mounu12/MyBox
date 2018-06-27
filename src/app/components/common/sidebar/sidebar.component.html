@@ -8,18 +8,16 @@
         
                   <ul id="menu-content" class="menu-content collapse out ">
                       <li class="text-center" *ngFor="let list of urlValues" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-                          <a class="navbarlink" routerLink={{list.urlLink}}>{{list.urlName}}&nbsp;<b [innerHTML]='list.icon' class="linkicon"></b></a>
-                        </li>
-                  
-                      <li data-toggle="collapse" data-target="#new" class="collapsed text-center" *ngFor="let list of urlSubvalues" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-                          <a class="navbarlink">{{list.urlName}}&nbsp;<b [innerHTML]='list.icon' class="linkicon"></b></a>
-                          <ul class="sub-menu collapse " id="new">
-                              <li class="text-center" *ngFor="let subvalue of list.terminalsubvalues">
-                                  <a class=" terminalmenu">{{subvalue.urlName}}</a>
-                              </li>
-                            </ul>
-                       
-                      </li>
+                        <a class="navbarlink" routerLink={{list.urlLink}}>{{list.urlName}}&nbsp;<b [innerHTML]='list.icon' class="linkicon"></b></a>
+                    </li>
+                    <li data-toggle="collapse" data-target="#new" class="collapsed text-center" *ngFor="let list of urlSubvalues" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                        <a class="navbarlink" >{{list.urlName}}&nbsp;<b [innerHTML]='list.icon' class="linkicon"></b></a>
+                        <ul class="sub-menu collapse " id="new">
+                            <li class="text-center" *ngFor="let subvalue of list.terminalsubvalues">
+                                <a class=" terminalmenu" routerLink={{subvalue.urlLink}}>{{subvalue.urlName}}</a>
+                            </li>
+                        </ul>
+                    </li>
                      
                   </ul>
            </div>
