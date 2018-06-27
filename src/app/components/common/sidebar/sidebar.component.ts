@@ -25,10 +25,17 @@ export class SidebarComponent implements OnInit {
           'icon' : '<i class="fa fa-chevron-down"></i>',
           terminalsubvalues: [{
             'urlLink': 'terminalmanagementsystem/devicemanagement',
-            'urlName': 'Device Management'
-          },
-          {
-            'urlName': 'Device Group'
+            'urlName': 'Device Management',
+            'icon' : '<i class="fa fa-chevron-down"></i>',
+            devicemanagementsubvalues:[{
+              'urlLink': 'devicegroup',
+              'urlName': 'Device Group'
+            },
+            {
+              'urlLink': '',
+              'urlName': 'Device Import'
+            }
+          ]
           }
           ]
         }
