@@ -13,6 +13,7 @@ import { SidebarComponent } from './components/common/sidebar/sidebar.component'
 import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 import { TerminalmanagementsystemComponent } from './components/admin/terminalmanagementsystem/terminalmanagementsystem.component';
 import { DevicemanagementComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
+import { DevicegroupComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicegroup/devicegroup.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DevicemanagementComponent } from './components/admin/terminalmanagement
     SidebarComponent,
     TerminalmanagementsystemComponent,
     DevicemanagementComponent,
+    DevicegroupComponent,
   
   ],
   imports: [

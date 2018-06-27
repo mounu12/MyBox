@@ -6,6 +6,7 @@ import { AdminComponent } from 'src/app/modules/admin/admin.component';
 import { McBreadcrumbsModule , McBreadcrumbsConfig  } from 'ngx-breadcrumbs';
 import { TerminalmanagementsystemComponent } from 'src/app/components/admin/terminalmanagementsystem/terminalmanagementsystem.component';
 import { DevicemanagementComponent } from 'src/app/components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
+import { DevicegroupComponent } from 'src/app/components/admin/terminalmanagementsystem/devicemanagement/devicegroup/devicegroup.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -23,9 +24,19 @@ const routes: Routes = [
         breadcrumbs: 'Terminal Management System'
         },
         children: [{
-            path: 'devicemanagement' , component: DevicemanagementComponent , data: {
-            breadcrumbs: 'Device Management'
-          }
+            path: 'devicemanagement' , component: DevicemanagementComponent ,
+            data: {
+              breadcrumbs: 'Device Management'
+            },
+            children: [
+            {
+              path: 'devicegroup' , component: DevicegroupComponent ,
+              data: {
+                breadcrumbs: 'Device Group'
+              }
+
+            }
+          ]
          }
         ]
     }
