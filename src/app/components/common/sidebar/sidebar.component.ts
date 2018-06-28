@@ -18,7 +18,12 @@ export class SidebarComponent implements OnInit {
       {
         'urlLink': 'devicemanagement',
         'urlName': 'Device Management System'
-      }];
+      },
+      {
+        'urlLink': 'modelmanagement',
+        'urlName': 'Model Management'
+      }
+    ];
     }
       // this.urlSubvalues = [
       //   {
