@@ -13,10 +13,7 @@ import { SidebarComponent } from './components/common/sidebar/sidebar.component'
 import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 import { TerminalmanagementsystemComponent } from 'src/app/modules/admin/terminalmanagementsystem/terminalmanagementsystem.component';
 import { DevicemanagementComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
-import { DevicegroupComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicegroup/devicegroup.component';
-
-import {DataTableModule} from 'angular2-datatable';
-
+import { DataTableModule } from "ng2-data-table";
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +25,6 @@ import {DataTableModule} from 'angular2-datatable';
     SidebarComponent,
     TerminalmanagementsystemComponent,
     DevicemanagementComponent,
-    DevicegroupComponent,
   ],
   imports: [
     BrowserModule,

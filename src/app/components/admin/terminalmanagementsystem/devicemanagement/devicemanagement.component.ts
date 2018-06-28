@@ -13,7 +13,7 @@ export class DevicemanagementComponent implements OnInit {
   public rowsOnPage = 10;
   public sortBy = 'createdAt';
   public sortOrder = 'desc';
-
+  selectedEntities: any = [];
   data: any = [
     {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
     {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
@@ -40,5 +40,7 @@ export class DevicemanagementComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  public setSelectedEntities($event: any) {
+    this.selectedEntities = $event;
+}
 }
