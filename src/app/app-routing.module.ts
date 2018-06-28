@@ -5,7 +5,6 @@ import { DashboardComponent } from 'src/app/components/admin/dashboard/dashboard
 import { AdminComponent } from 'src/app/modules/admin/admin.component';
 import { McBreadcrumbsModule , McBreadcrumbsConfig  } from 'ngx-breadcrumbs';
 import { DevicemanagementComponent } from 'src/app/components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
-import { DevicegroupComponent } from 'src/app/components/admin/terminalmanagementsystem/devicemanagement/devicegroup/devicegroup.component';
 import { TerminalmanagementsystemComponent } from 'src/app/modules/admin/terminalmanagementsystem/terminalmanagementsystem.component';
 
 const routes: Routes = [
@@ -29,22 +28,11 @@ const routes: Routes = [
             data: {
               breadcrumbs: 'Device Management'
             },
-          },
-          // children: [
-          {
-            path: 'devicegroup' , component: DevicegroupComponent ,
-            data: {
-              breadcrumbs: 'Device Management / Device Group'
-            }
-
-          // }
-          // ]
-         }
+          }
         ]
-    }
-  ] },
-];
-
+      }
+    ]}
+  ];
 @NgModule({
   imports: [RouterModule.forRoot(routes),
   McBreadcrumbsModule.forRoot()
