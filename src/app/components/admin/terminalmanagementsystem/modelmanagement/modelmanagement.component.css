@@ -1,0 +1,21 @@
+.modelbutton{
+    border-radius: 0px;
+}
+.addmodelcontent{
+    border-radius: 0px;
+}
+.addmodelbutton{
+    border-radius:0px;
+}
+.thumnailuploadinput{
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.uploadbutton{
+    border-radius: 0px;
+    padding: 6px 16px;
+    font-size: 16px;
+}

@@ -14,6 +14,7 @@ import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 import { TerminalmanagementsystemComponent } from 'src/app/modules/admin/terminalmanagementsystem/terminalmanagementsystem.component';
 import { DevicemanagementComponent } from './components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
 import { DataTableModule } from "ng2-data-table";
+import { ModelmanagementComponent } from './components/admin/terminalmanagementsystem/modelmanagement/modelmanagement.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { DataTableModule } from "ng2-data-table";
     SidebarComponent,
     TerminalmanagementsystemComponent,
     DevicemanagementComponent,
+    ModelmanagementComponent,
   ],
   imports: [
     BrowserModule,
