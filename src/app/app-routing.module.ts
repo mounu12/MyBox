@@ -4,9 +4,9 @@ import { LoginComponent } from 'src/app/components/common/login/login.component'
 import { DashboardComponent } from 'src/app/components/admin/dashboard/dashboard.component';
 import { AdminComponent } from 'src/app/modules/admin/admin.component';
 import { McBreadcrumbsModule , McBreadcrumbsConfig  } from 'ngx-breadcrumbs';
-import { TerminalmanagementsystemComponent } from 'src/app/components/admin/terminalmanagementsystem/terminalmanagementsystem.component';
 import { DevicemanagementComponent } from 'src/app/components/admin/terminalmanagementsystem/devicemanagement/devicemanagement.component';
 import { DevicegroupComponent } from 'src/app/components/admin/terminalmanagementsystem/devicemanagement/devicegroup/devicegroup.component';
+import { TerminalmanagementsystemComponent } from 'src/app/modules/admin/terminalmanagementsystem/terminalmanagementsystem.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -19,7 +19,7 @@ const routes: Routes = [
       }
     },
     {
-      path: 'terminalmanagementsystem' ,
+      path: 'terminalmanagementsystem' , component: TerminalmanagementsystemComponent,
       data: {
         breadcrumbs: 'Terminal Management System'
         },
@@ -59,11 +59,11 @@ export class AppRoutingModule {
       // Ensure the first breadcrumb points to home
       let y = x;
 
-      if (x.length && x[0].text !== 'Dashboard') {
+      if (x.length && x[0].text !== 'Terminal Management System') {
         y = [
           {
-            text: 'Dashboard',
-            path: 'dashboard'
+            text: 'Terminal Management System',
+            path: 'terminalmanagementsystem'
           }
         ].concat(x);
       }
