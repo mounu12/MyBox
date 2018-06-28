@@ -1,32 +1,22 @@
-<form role="form" class="form-inline">
-<div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-1">
-        <div class="form-group">
-            <label for="Macinput">MAC:</label>&nbsp;
-            <input type="email" class="form-control" style="width: 70%" id="exampleInputEmail1" placeholder="Months">
+  <form>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <input type="text" placeholder="Model Name" class="form-control"/>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <input type="text" placeholder="Model ID" class="form-control"/>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-        <div class="form-group">
-            <label for="Macinput">Serial No:</label>&nbsp;
-            <input type="email" class="form-control" style="width: 70%" id="exampleInputEmail1" placeholder="Months">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <select class="form-control"  paceholder="Select" >
+                <option  disabled selected>Type</option>
+             </select>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-        <div class="form-group">
-            <label for="Macinput">Operator:</label>&nbsp;
-            <div class="input-group">
-                <select class="form-control form-input"  paceholder="Select" >
-                    <option value="" disabled selected>Select your option</option>
-                 </select>
-            </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <button type="button" class="btn btn-primary modelbutton">Search</button>
         </div>
-    </div>
-    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-        <button type="button" class="btn btn-primary modelbutton">Search</button>
-    </div>
     </div>
   </form>
+  <br>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <button type="button" class="btn btn-success modelbutton" data-toggle="modal" data-target="#addmodel"><i class="fa fa-plus"></i> &nbsp; Add Model</button>&nbsp;
@@ -52,7 +42,7 @@
                     <label class="pull-right">Model Name* :</label>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                      <input type="text" class="form-control form-input" name="modelname" placeholder="Enter the name here" [(ngModel)]="model.modelname" required>
+                      <input type="text" class="form-control form-input" name="modelname" placeholder="Enter the Model name here" [(ngModel)]="model.modelname" required>
                   </div>
                 </div>
                 <br>
@@ -61,7 +51,7 @@
                     <label class="pull-right">Model ID* :</label>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                      <input type="text" class="form-control form-input"  name="modelid" placeholder="Enter the number here" [(ngModel)]="model.modelid"  required>
+                      <input type="text" class="form-control form-input"  name="modelid" placeholder="Enter the Model number here" [(ngModel)]="model.modelid"  required>
                   </div>
                 </div>
                 <br>
@@ -71,7 +61,7 @@
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                     <select class="form-control form-input" name="type" [(ngModel)]="model.type">
-                        <option value="" disabled selected>Select your option</option>
+                        <option [ngValue]="undefined" disabled  selected> Select your option </option>
                       </select>
                   </div>
                 </div>
@@ -82,7 +72,7 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                       <select class="form-control form-input" name="operator" [(ngModel)]="model.operator">
-                          <option value="" disabled selected>Select your option</option>
+                          <option [ngValue]="undefined" disabled  selected> Select your option </option>
                         </select>
                     </div>
                   </div>
@@ -93,7 +83,7 @@
                       </div>
                       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                         <select class="form-control form-input" name="cas" [(ngModel)]="model.cas">
-                            <option value="" disabled selected>Select your option</option>
+                            <option [ngValue]="undefined" disabled  selected> Select your option </option>
                           </select>
                       </div>
                     </div>
@@ -168,3 +158,66 @@
         
       </div>
     </div>
+    <br>
+    <!--Model list-->
+    <table class="table table-striped table-bordered" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5"  (mfSelectedEntities)="setSelectedEntities($event)">
+        <thead>
+        <tr>
+            <th>
+                <mfRowSelectorHead></mfRowSelectorHead>
+            </th>
+            <th >
+                <mfDefaultSorter by="thumbnail">Thumbnail</mfDefaultSorter>
+            </th>
+            <th >
+                <mfDefaultSorter by="model name">Model Name</mfDefaultSorter>
+            </th>
+            <th >
+                <mfDefaultSorter by="modelid">Model Id</mfDefaultSorter>
+            </th>
+            <th >
+                <mfDefaultSorter by="vendor">Vendor</mfDefaultSorter>
+            </th>
+            <th >
+                <mfDefaultSorter by="chipset">Chipset</mfDefaultSorter>
+            </th>
+            <th >
+                <mfDefaultSorter by="ddr">DDR</mfDefaultSorter>
+            </th>
+            <th >
+                <mfDefaultSorter by="nandflash">Nand Flash</mfDefaultSorter>
+            </th>
+            <th >
+                <mfDefaultSorter by="cas">CAS</mfDefaultSorter>
+            </th>
+           
+            <th >
+                <mfDefaultSorter by="operator">Operation</mfDefaultSorter>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of mf.data">
+                <td><mfRowSelector [entity]="item" [checkboxId]="ndx"></mfRowSelector></td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td >{{item.age}}</td>
+            <td>{{item.city | uppercase}}</td>
+            <td>{{item.operator}}</td>
+            <td>{{item.lastcontact}}</td>
+            <td>{{item.group}}</td>
+            <td>{{item.operator}}</td>
+          
+            <td><span class="glyphicon glyphicon-pencil" style="color:#5cb85c"></span></td>
+           
+           
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="10">
+                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
