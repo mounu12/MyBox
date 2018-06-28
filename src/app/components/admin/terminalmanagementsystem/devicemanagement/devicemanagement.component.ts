@@ -15,14 +15,14 @@ export class DevicemanagementComponent implements OnInit {
   public sortOrder = 'desc';
   selectedEntities: any = [];
   data: any = [
+    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd', operator: 'vodafone', lastcontact: '456788',group: 'aaa',version: '2.0',status:'active',connected:'no',chipid:'s46354'},
+    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd', operator: 'vodafone', lastcontact: '456788',group: 'aaa',version: '2.0',status:'active',connected:'no',chipid:'s46354'},
     {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
     {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
     {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
     {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
     {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'teja', email: 'sdf@wer.com', age: 122, city: 'dddd'},
+    {name: 'teja', email: 'sdf@wer.com', age: 122, city: 'dddd', operator: 'vodafone', lastcontact: '456788',group: 'aaa',version: '2.0',status:'active',connected:'no',chipid:'s46354'},
 
   ];
 
