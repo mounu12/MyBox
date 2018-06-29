@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
         if (this.headerBrandName) {
             this.navbarBrand = this.headerBrandName;
         } else {
-            this.navbarBrand = 'MY BOX';
+            this.navbarBrand = 'MY Connect';
         }
     }
     loadHeaderChanges() {
@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
                 this.loginStatus = true;
                 this.urlValues = [{
                         'urlLink': '/home',
-                        'urlName': 'My Box',
+                        'urlName': 'Admin',
                         'icon': '<i class="fa fa-user sdmcicon"></i>'
                     },
                     {
