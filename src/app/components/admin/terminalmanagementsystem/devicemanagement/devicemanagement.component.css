@@ -2,6 +2,20 @@
     border-radius: 0px;
 }
     
+
+    .factory{
+        background: #337ab7;
+        text-align: center;
+        color: #ffffff
+    }
+    .addmodelbutton{
+        border-radius: 0px;
+    }
+    .star{
+        color: red;
+    }
+
 .searchbutton {
     border-radius:0px
 }
+

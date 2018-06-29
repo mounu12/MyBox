@@ -39,7 +39,7 @@
             <form  #AddModelForm="ngForm">
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <label class="pull-right">Model Name* :</label>
+                    <label class="pull-right">Model Name <span class="star">*</span></label>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                       <input type="text" class="form-control form-input" name="modelname" placeholder="Enter the Model name here" [(ngModel)]="model.modelname" required>
@@ -48,7 +48,7 @@
                 <br>
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <label class="pull-right">Model ID* :</label>
+                    <label class="pull-right">Model ID <span class="star">*</span></label>
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                       <input type="text" class="form-control form-input"  name="modelid" placeholder="Enter the Model number here" [(ngModel)]="model.modelid"  required>

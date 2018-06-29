@@ -8,6 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class DevicemanagementComponent implements OnInit {
   displayDevieM: boolean;
+  model: any = {};
   path: string;
   mainPath: string;
   public rowsOnPage = 10;
