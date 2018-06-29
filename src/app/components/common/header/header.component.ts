@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd  } from '@angular/router';
 import { CookieService } from 'angular2-cookie/core';
-
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
     urlValues: any;
@@ -13,7 +12,7 @@ export class HeaderComponent implements OnInit {
     loginStatus: boolean;
     headerBrandName: any = '';
     navbarBrand: any = '';
-    constructor(private router: Router , private cookieService: CookieService ) { }
+    constructor(private router: Router, private cookieService: CookieService) {}
 
     ngOnInit() {
         this.loadLoginData();
@@ -29,9 +28,8 @@ export class HeaderComponent implements OnInit {
     }
     loadHeaderBrandNameChanges() {
         if (this.headerBrandName) {
-            this.navbarBrand = this.headerBrandName ;
+            this.navbarBrand = this.headerBrandName;
         } else {
-            this.headerBrandStatus = false ;
             this.navbarBrand = 'MY BOX';
         }
     }
@@ -39,16 +37,15 @@ export class HeaderComponent implements OnInit {
         if (this.loginData) {
             if (this.loginData.role === 'admin') {
                 this.loginStatus = true;
-                this.urlValues = [
-                    {
+                this.urlValues = [{
                         'urlLink': '/home',
                         'urlName': 'My Box',
-                        'icon' : '<i class="fa fa-user sdmcicon"></i>'
+                        'icon': '<i class="fa fa-user sdmcicon"></i>'
                     },
                     {
                         'urlLink': '/about',
                         'urlName': 'Modify Password',
-                        'icon' : '<i class="fa fa-edit modifypasswordicon"></i>'
+                        'icon': '<i class="fa fa-edit modifypasswordicon"></i>'
                     },
                     // {
                     //     'urlLink': '/contact',
@@ -59,12 +56,11 @@ export class HeaderComponent implements OnInit {
             }
         } else {
             this.loginStatus = false;
-            this.urlValues = [
-                {
-                    'urlLink': '/login',
-                    'urlName': 'Login'
-                } ];
-            }
+            this.urlValues = [{
+                'urlLink': '/login',
+                'urlName': 'Login'
+            }];
+        }
     }
     logout() {
         console.log('logout');
@@ -74,5 +70,4 @@ export class HeaderComponent implements OnInit {
         this.router.navigate(['login']);
     }
 }
-
 

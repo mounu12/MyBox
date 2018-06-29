@@ -8,14 +8,13 @@ import { Router, CanActivate } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   logindata: any = {};
-  constructor(private router: Router , private cookieService: CookieService ) {}
+  constructor(private router: Router, private cookieService: CookieService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   signIn() {
-    this.logindata.role = 'admin';
-    this.cookieService.putObject('loginData', this.logindata);
-    this.router.navigate(['admin/dashboard']);
+      this.logindata.role = 'admin';
+      this.cookieService.putObject('loginData', this.logindata);
+      this.router.navigate(['admin/dashboard']);
   }
 
 }

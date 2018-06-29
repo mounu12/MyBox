@@ -15,33 +15,176 @@ export class DevicemanagementComponent implements OnInit {
   public sortBy = 'createdAt';
   public sortOrder = 'desc';
   selectedEntities: any = [];
-  data: any = [
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd', operator: 'vodafone', lastcontact: '456788',group: 'aaa',version: '2.0',status:'active',connected:'no',chipid:'s46354'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd', operator: 'vodafone', lastcontact: '456788',group: 'aaa',version: '2.0',status:'active',connected:'no',chipid:'s46354'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'goutam', email: 'sdf@wer.com', age: 122, city: 'dddd'},
-    {name: 'teja', email: 'sdf@wer.com', age: 122, city: 'dddd', operator: 'vodafone', lastcontact: '456788',group: 'aaa',version: '2.0',status:'active',connected:'no',chipid:'s46354'},
-
+  data: any = [{
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
+      {
+          mac: '00:1A:CC:1A:70:FF',
+          serialnumber: '170300070053',
+          manufacturer: 'SDMC',
+          model: 'DV7819A',
+          lastcontact: '05/01/2018 14:09:16',
+          group: 'zsj-test-group-FF',
+          version: '4.10.7.6',
+          status: 'Activated',
+          connected: 'online',
+          chipid: 's46354',
+          cardid: '547D87364',
+          operation: 'no'
+      },
   ];
 
   constructor(private _router: Router, private activatedRoute: ActivatedRoute) {
-    this.mainPath = this.activatedRoute.snapshot.url[0].path;
-    this.path = this._router.url;
+      this.mainPath = this.activatedRoute.snapshot.url[0].path;
+      this.path = this._router.url;
 
-    console.log('path' + this.path);
-    if (this.path === '/admin/terminalmanagementsystem/devicemanagement') {
-      this.displayDevieM = true;
-    } else {
-      this.displayDevieM = false;
-    }
+      console.log('path' + this.path);
+      if (this.path === '/admin/terminalmanagementsystem/devicemanagement') {
+          this.displayDevieM = true;
+      } else {
+          this.displayDevieM = false;
+      }
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   public setSelectedEntities($event: any) {
-    this.selectedEntities = $event;
-}
+      this.selectedEntities = $event;
+  }
 }

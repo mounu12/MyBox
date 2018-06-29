@@ -8,14 +8,13 @@ import { CookieService } from 'angular2-cookie/core';
 })
 export class DashboardComponent implements OnInit {
   headerBrandName: any = '';
-  constructor(private router: Router, private cookieService: CookieService ) { }
+  constructor(private router: Router, private cookieService: CookieService) {}
 
-  ngOnInit() {
-    }
+  ngOnInit() {}
   terminalmanagement() {
-  this.router.navigate(['admin/terminalmanagementsystem']);
-  this.headerBrandName = 'Terminal Management System';
-  this.cookieService.putObject('headerBrandName', this.headerBrandName);
+      this.router.navigate(['admin/terminalmanagementsystem']);
+      this.headerBrandName = 'Terminal Management System';
+      this.cookieService.putObject('headerBrandName', this.headerBrandName);
   }
 
 }

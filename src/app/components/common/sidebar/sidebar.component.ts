@@ -8,42 +8,41 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
   urlValues: any;
   urlSubvalues: any;
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    this.loadSidebarChanges();
+      this.loadSidebarChanges();
   }
   loadSidebarChanges() {
-    this.urlValues = [
-      {
-        'urlLink': 'devicemanagement',
-        'urlName': 'Device Management System'
-      },
-      {
-        'urlLink': 'modelmanagement',
-        'urlName': 'Model Management'
-      }
-    ];
-    }
-      // this.urlSubvalues = [
-      //   {
-      //     'urlName': 'Terminal Management System',
-      //     'icon' : '<i class="fa fa-chevron-down"></i>',
-      //     terminalsubvalues: [{
-      //       'urlLink': 'terminalmanagementsystem/devicemanagement',
-      //       'urlName': 'Device Management',
-      //       'icon' : '<i class="fa fa-chevron-down"></i>',
-      //       devicemanagementsubvalues: [{
-      //         'urlLink': 'terminalmanagementsystem/devicegroup',
-      //         'urlName': 'Device Group'
-      //       },
-      //       {
-      //         'urlLink': '',
-      //         'urlName': 'Device Import'
-      //       }
-      //     ]
-      //     }
-      //     ]
-      //   }
-      // ];
+      this.urlValues = [{
+              'urlLink': 'devicemanagement',
+              'urlName': 'Device Management System'
+          },
+          {
+              'urlLink': 'modelmanagement',
+              'urlName': 'Model Management'
+          }
+      ];
   }
+  // this.urlSubvalues = [
+  //   {
+  //     'urlName': 'Terminal Management System',
+  //     'icon' : '<i class="fa fa-chevron-down"></i>',
+  //     terminalsubvalues: [{
+  //       'urlLink': 'terminalmanagementsystem/devicemanagement',
+  //       'urlName': 'Device Management',
+  //       'icon' : '<i class="fa fa-chevron-down"></i>',
+  //       devicemanagementsubvalues: [{
+  //         'urlLink': 'terminalmanagementsystem/devicegroup',
+  //         'urlName': 'Device Group'
+  //       },
+  //       {
+  //         'urlLink': '',
+  //         'urlName': 'Device Import'
+  //       }
+  //     ]
+  //     }
+  //     ]
+  //   }
+  // ];
+}
