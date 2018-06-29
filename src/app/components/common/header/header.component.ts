@@ -11,14 +11,29 @@ export class HeaderComponent implements OnInit {
     urlValues: any;
     loginData: any;
     loginStatus: boolean;
+    headerBrandName: any = '';
+    navbarBrand: any = '';
     constructor(private router: Router , private cookieService: CookieService ) { }
 
     ngOnInit() {
         this.loadLoginData();
         this.loadHeaderChanges();
+        this.laodheaderBrandName();
+        this.loadHeaderBrandNameChanges();
     }
     loadLoginData() {
         this.loginData = this.cookieService.getObject('loginData');
+    }
+    laodheaderBrandName() {
+        this.headerBrandName = this.cookieService.getObject('headerBrandName');
+    }
+    loadHeaderBrandNameChanges() {
+        if (this.headerBrandName) {
+            this.navbarBrand = this.headerBrandName ;
+        } else {
+            this.headerBrandStatus = false ;
+            this.navbarBrand = 'MY BOX';
+        }
     }
     loadHeaderChanges() {
         if (this.loginData) {

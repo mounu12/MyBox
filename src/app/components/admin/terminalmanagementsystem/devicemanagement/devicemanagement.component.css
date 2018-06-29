@@ -2,14 +2,6 @@
     border-radius: 0px;
 }
     
-.searchButton {
-    width: 76px;
-    height: 37px;
-    text-align: center;
-    color: #fff;
-    /* border-radius: 5px; */
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: -27%;
-    border-radius: 0px;
-    }
+.searchbutton {
+    border-radius:0px
+}
