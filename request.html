@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Save the Earth</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="saveearthdescri.html">About Us</a>
+						<a href="donate.html">Donate Trees</a>
+						<a href="request.html">Request Trees</a>
+						<a href="contact.html">Contact Us</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Request Plants</h2>
+    <p>Plant the trees to make better Planet</p>
+  </div>
+  <div class="row">
+    
+    <div class="container" style="align-center">
+      <form name="contact" action="success.html" onsubmit="return validationForm()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<label for="email">Your emailId</label>
+		<input type="text" id="email" name="email" placeholder="Your email..">
+		<label for="text">Contact number</label>
+		<input type="text" id="phonenumber" name="mobilenumber" placeholder="Your contact number..">
+        <label for="country">Select a Tree</label>
+	
+        <select id="tree" name="trees">
+          <option value="AF">Neem</option>
+	<option value="AX">Sacred fig</option>
+	<option value="AL">Sal</option>
+	<option value="DZ">Coconut</option>
+	<option value="AS">Banyan</option>
+	<option value="AD">Sacred fig</option>
+	<option value="AO">Deodar</option>
+	<option value="AI">Mango</option>
+	
+        </select>
+		 Quantity (between 1 and 10):
+  <input type="number" name="quantity" min="1" max="10"><br>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+function validationForm()                                   
+{
+    var name = document.forms["contact"]["fname"];              
+    var lname = document.forms["contact"]["lname"];   
+    var email = document.forms["contact"]["email"]; 
+    var phone =  document.forms["contact"]["phonenumber"]; 
+    var trees = document.forms["contact"]["trees"]; 
+    var textarea = document.forms["contact"]["subject"]; 
+	var quan=document.forms["contact"]["quantity"];
+  
+    if (name.value == "")                                 
+    {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+	if(quan.value=="")
+	{
+	window.alert("Please enter number of trees");
+	tree.focus();
+	return false;
+	}
+  
+    if (lname.value == "")                              
+    {
+        window.alert("Please enter your last name.");
+        lname.focus();
+        return false;
+    }
+      
+    if (email.value == "")                                  
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+  
+    if (email.value.indexOf("@", 0) < 0)                
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+  
+    if (email.value.indexOf(".", 0) < 0)                
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+  
+    if (isNaN(phone.value) == true)                          
+    {
+        window.alert("Please enter your telephone number.");
+        phone.focus();
+        return false;
+    }
+  
+    
+  
+    if (trees.selectedIndex < 1)                 
+    {
+        alert("Please enter a tree name.");
+        trees.focus();
+        return false;
+    }
+  
+    return true;
+}</script>
+</body>
+</html>
